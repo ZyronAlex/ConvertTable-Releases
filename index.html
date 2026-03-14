@@ -1,99 +1,128 @@
-﻿<HTML>
-  <HEAD>
-    <TITLE>Conversor Mercos</TITLE>
-    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8" />
-    <STYLE TYPE="text/css">
-<!--
-BODY{margin-top:20px; margin-left:20px; margin-right:20px; color:#000000; font-family:Tahoma; background-color:white}
-A:link {font-weight:normal; color:#000066; text-decoration:none}
-A:visited {font-weight:normal; color:#000066; text-decoration:none}
-A:active {font-weight:normal; text-decoration:none}
-A:hover {font-weight:normal; color:#FF6600; text-decoration:none}
-P {margin-top:0px; margin-bottom:12px; color:#000000; font-family:Tahoma}
-PRE {border-right:#f0f0e0 1px solid; padding-right:5px; border-top:#f0f0e0 1px solid; margin-top:-5px; padding-left:5px; font-size:x-small; padding-bottom:5px; border-left:#f0f0e0 1px solid; padding-top:5px; border-bottom:#f0f0e0 1px solid; font-family:Courier New; background-color:#e5e5cc}
-TD {font-size:12px; color:#000000; font-family:Tahoma}
-H2 {border-top: #003366 1px solid; margin-top:25px; font-weight:bold; font-size:1.5em; margin-bottom:10px; margin-left:-15px; color:#003366}
-H3 {margin-top:10px; font-size: 1.1em; margin-bottom: 10px; margin-left: -15px; color: #000000}
-UL {margin-top:10px; margin-left:20px}
-OL {margin-top:10px; margin-left:20px}
-LI {margin-top:10px; color: #000000}
-FONT.value {font-weight:bold; color:darkblue}
-FONT.key {font-weight: bold; color: darkgreen}
-.divTag {border:1px; border-style:solid; background-color:#FFFFFF; text-decoration:none; height:auto; width:auto; background-color:#cecece}
-.BannerColumn {background-color:#000000}
-.Banner {border:0; padding:0; height:8px; margin-top:0px; color:#ffffff; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#1c5280',EndColorStr='#FFFFFF');}
-.BannerTextCompany {font:bold; font-size:18pt; color:#cecece; font-family:Tahoma; height:0px; margin-top:0; margin-left:8px; margin-bottom:0; padding:0px; white-space:nowrap; filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2,OffY=2,Color='black',Positive='true');}
-.BannerTextApplication {font:bold; font-size:18pt; font-family:Tahoma; height:0px; margin-top:0; margin-left:8px; margin-bottom:0; padding:0px; white-space:nowrap; filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2,OffY=2,Color='black',Positive='true');}
-.BannerText {font:bold; font-size:18pt; font-family:Tahoma; height:0px; margin-top:0; margin-left:8px; margin-bottom:0; padding:0px; filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2,OffY=2,Color='black',Positive='true');}
-.BannerSubhead {border:0; padding:0; height:16px; margin-top:0px; margin-left:10px; color:#ffffff; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#4B3E1A',EndColorStr='#FFFFFF');}
-.BannerSubheadText {font:bold; height:11px; font-size:11px; font-family:Tahoma; margin-top:1; margin-left:10; filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2,OffY=2,Color='black',Positive='true');}
-.FooterRule {border:0; padding:0; height:1px; margin:0px; color:#ffffff; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#4B3E1A',EndColorStr='#FFFFFF');}
-.FooterText {font-size:11px; font-weight:normal; text-decoration:none; font-family:Tahoma; margin-top:10; margin-left:0px; margin-bottom:2; padding:0px; color:#999999; white-space:nowrap}
-.FooterText A:link {font-weight:normal; color:#999999; text-decoration:underline}
-.FooterText A:visited {font-weight:normal; color:#999999; text-decoration:underline}
-.FooterText A:active {font-weight:normal; color:#999999; text-decoration:underline}
-.FooterText A:hover {font-weight:normal; color:#FF6600; text-decoration:underline}
-.ClickOnceInfoText {font-size:11px; font-weight:normal; text-decoration:none; font-family:Tahoma; margin-top:0; margin-right:2px; margin-bottom:0; padding:0px; color:#000000}
-.InstallTextStyle {font:bold; font-size:14pt; font-family:Tahoma; a:#FF0000; text-decoration:None}
-.DetailsStyle {margin-left:30px}
-.ItemStyle {margin-left:-15px; font-weight:bold}
-.StartColorStr {background-color:#4B3E1A}
-.JustThisApp A:link {font-weight:normal; color:#000066; text-decoration:underline}
-.JustThisApp A:visited {font-weight:normal; color:#000066; text-decoration:underline}
-.JustThisApp A:active {font-weight:normal; text-decoration:underline}
-.JustThisApp A:hover {font-weight:normal; color:#FF6600; text-decoration:underline}
--->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertTable - Conversor Mercos</title>
+    <!-- Tailwind CSS (via CDN para facilitar) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-6 text-slate-800">
 
-</STYLE>
+    <!-- Card Principal -->
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-2xl overflow-hidden border border-slate-100">
+        
+        <!-- Header / Logo -->
+        <div class="p-8 pb-6 text-center border-b border-slate-100 bg-slate-50/50">
+            <!-- Ícone Placeholder -->
+            <div class="mx-auto w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mb-4 shadow-inner border border-blue-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+            </div>
+            
+            <h1 class="text-3xl font-bold mb-2">ConvertTable <span class="gradient-text">Mercos</span></h1>
+            <p class="text-slate-500 font-medium">Sistema de Conversão de Tabelas para o B2B Mercos</p>
+            <p class="text-sm text-slate-400 mt-2" id="app-version">Carregando versão recente...</p>
+        </div>
 
-</HEAD>
-  <BODY>
-    <TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="2" BORDER="0">
+        <!-- Botões de Download -->
+        <div class="p-8 text-center bg-white space-y-6">
+            
+            <div class="bg-blue-50 border border-blue-100 text-blue-800 px-4 py-3 rounded-lg text-sm text-left mb-6">
+                <strong>Pré-requisitos:</strong> Esta aplicação requer o <b>.NET Desktop Runtime 8.0.24 (x64)</b> instalado em seu computador.
+            </div>
 
-<!-- Begin Banner -->
-<TR><TD><TABLE CELLPADDING="2" CELLSPACING="0" BORDER="0" BGCOLOR="#cecece" WIDTH="100%"><TR><TD><TABLE BGCOLOR="#1c5280" WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR><TD CLASS="Banner" /></TR><TR><TD CLASS="Banner"><SPAN CLASS="BannerTextCompany">Belosoftwares</SPAN></TD></TR><TR><TD CLASS="Banner"><SPAN CLASS="BannerTextApplication">Conversor Mercos</SPAN></TD></TR><TR><TD CLASS="Banner" ALIGN="RIGHT" /></TR></TABLE></TD></TR></TABLE></TD></TR>
-<!-- End Banner -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <!-- Instalador Completo (Primary) -->
+                <a href="setup.exe" class="inline-flex items-center justify-center gap-3 px-6 py-4 text-base font-semibold text-white gradient-bg rounded-xl shadow-lg hover:shadow-indigo-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 w-full sm:w-auto flex-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <span>
+                        <span class="block text-left text-sm font-normal opacity-80">Primeira vez instalando?</span>
+                        Baixar setup.exe
+                    </span>
+                </a>
 
+                <!-- Inicialização Direta (Secondary) -->
+                <a href="ConvertTable.application" class="inline-flex items-center justify-center gap-3 px-6 py-4 text-base font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-xl shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 w-full sm:w-auto flex-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <span>
+                        <span class="block text-left text-sm font-normal text-slate-500">Já tem o .NET Desktop?</span>
+                        Apenas Executar (.application)
+                    </span>
+                </a>
+            </div>
+        </div>
 
-<!-- Begin Dialog -->
-<TR><TD ALIGN="LEFT"><TABLE CELLPADDING="2" CELLSPACING="0" BORDER="0" WIDTH="540"><TR><TD WIDTH="496">
+        <!-- Instruções de Instalação -->
+        <div class="p-8 bg-slate-50 border-t border-slate-100 text-left">
+            <h3 class="font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule-evenodd />
+                </svg>
+                Como instalar? (Importante)
+            </h3>
+            
+            <ol class="space-y-4 text-sm text-slate-600 list-decimal list-outside ml-4">
+                <li class="pl-2">Se você <strong>nunca usou</strong> o sistema nesse PC, clique em <strong class="text-slate-800">Baixar setup.exe</strong> para instalar o .NET 8 e o aplicativo.</li>
+                <li class="pl-2">Caso já tenha os pré-requisitos, clique em <strong class="text-slate-800">Apenas Executar (.application)</strong>.</li>
+                <li class="pl-2">Aviso de Segurança: O Windows Defender SmartScreen pode exibir uma tela azul. Clique em <strong class="text-slate-800">Mais informações</strong> e depois em <strong class="text-slate-800">Executar assim mesmo</strong> para prosseguir.</li>
+                <li class="pl-2">O instalador baixará a versão mais recente e criará um atalho na sua Área de Trabalho.</li>
+            </ol>
+        </div>
 
-<!-- Begin AppInfo -->
-<TABLE><TR><TD COLSPAN="3">&nbsp;</TD></TR><TR><TD><B>Name:</B></TD><TD WIDTH="5"><SPACER TYPE="block" WIDTH="10" /></TD><TD>Conversor Mercos</TD></TR><TR><TD COLSPAN="3">&nbsp;</TD></TR><TR><TD><B>Version:</B></TD><TD WIDTH="5"><SPACER TYPE="block" WIDTH="10" /></TD><TD>1.0.5.8</TD></TR><TR><TD COLSPAN="3">&nbsp;</TD></TR><TR><TD><B>Publisher:</B></TD><TD WIDTH="5"><SPACER TYPE="block" WIDTH="10" /></TD><TD>Belosoftwares</TD></TR><tr><td colspan="3">&nbsp;</td></tr></TABLE>
-<!-- End AppInfo -->
+    </div>
 
+    <!-- Footer -->
+    <div class="mt-8 text-center text-sm text-slate-400 font-medium">
+        &copy; 2026 Belosoftwares Customer Support. <a href="https://belosoftwares.com.br" class="text-blue-500 hover:underline">Contato</a>.
+    </div>
 
-<!-- Begin Prerequisites -->
-<TABLE ID="BootstrapperSection" BORDER="0"><TR><TD COLSPAN="2">The following prerequisites are required:</TD></TR><TR><TD WIDTH="10">&nbsp;</TD><TD><UL>
-<LI>.NET Desktop Runtime 8.0.24 (x64)</LI>
-</UL></TD></TR><TR><TD COLSPAN="2">
-If these components are already installed, you can <SPAN CLASS="JustThisApp"><A HREF="ConvertTable.application">launch</A></SPAN> the application now. Otherwise, click the button below to install the prerequisites and run the application.
-</TD></TR><TR><TD COLSPAN="2">&nbsp;</TD></TR></TABLE>
-<!-- End Prerequisites -->
-
-
-</TD></TR></TABLE>
-<!-- Begin Buttons -->
-<TR><TD ALIGN="LEFT"><TABLE CELLPADDING="2" CELLSPACING="0" BORDER="0" WIDTH="540" STYLE="cursor:hand" ONCLICK="window.navigate(InstallButton.href)"><TR><TD ALIGN="LEFT"><TABLE CELLPADDING="1" BGCOLOR="#333333" CELLSPACING="0" BORDER="0"><TR><TD><TABLE CELLPADDING="1" BGCOLOR="#cecece" CELLSPACING="0" BORDER="0"><TR><TD><TABLE CELLPADDING="1" BGCOLOR="#efefef" CELLSPACING="0" BORDER="0"><TR><TD WIDTH="20"><SPACER TYPE="block" WIDTH="20" HEIGHT="1" /></TD><TD><A ID="InstallButton" HREF="setup.exe">Install</A></TD><TD width="20"><SPACER TYPE="block" WIDTH="20" HEIGHT="1" /></TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE></TD><TD WIDTH="15%" ALIGN="right" /></TR></TABLE></TD></TR>
-<!-- End Buttons -->
-</TD></TR>
-<!-- End Dialog -->
-
-
-
-<!-- Spacer Row -->
-<TR><TD>&nbsp;</TD></TR>
-
-<TR><TD>
-<!-- Begin Footer -->
-<TABLE WIDTH="100%" CELLPADDING="0" CELLSPACING="0" BORDER="0" BGCOLOR="#ffffff"><TR><TD HEIGHT="5"><SPACER TYPE="block" HEIGHT="5" /></TD></TR><TR><TD CLASS="FooterText" ALIGN="center">
-<A HREF="https://belosoftwares.com.br">Belosoftwares Customer Support</A>
-&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp;&nbsp;
-<A HREF="https://go.microsoft.com/fwlink/?linkid=2146276">ClickOnce Resources</A>
-</TD></TR><TR><TD HEIGHT="5"><SPACER TYPE="block" HEIGHT="5" /></TD></TR><TR><TD HEIGHT="1" bgcolor="#cecece"><SPACER TYPE="block" HEIGHT="1" /></TD></TR></TABLE>
-<!-- End Footer -->
-</TD></TR>
-
-</TABLE>
-  </BODY>
-</HTML>
+    <!-- Script para atualizar versão dinamicamente via ConvertTable.application -->
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                // Tenta buscar o arquivo do manifesto de aplicação gerado pelo ClickOnce
+                const response = await fetch("ConvertTable.application");
+                if (response.ok) {
+                    const xmlText = await response.text();
+                    
+                    // Extrai a versão da string XML buscando pela tag assemblyIdentity
+                    // Ex: <assemblyIdentity name="ConvertTable.application" version="1.0.5.9" ... />
+                    const versionMatch = xmlText.match(/<assemblyIdentity[^>]+version="([^"]+)"/i);
+                    
+                    if (versionMatch && versionMatch[1]) {
+                        document.getElementById("app-version").innerText = `Versão ${versionMatch[1]}`;
+                    } else {
+                        document.getElementById("app-version").innerText = "Versão Mais Recente";
+                    }
+                } else {
+                    document.getElementById("app-version").innerText = "Pronto para download";
+                }
+            } catch (error) {
+                console.error("Erro ao tentar ler o arquivo ConvertTable.application", error);
+                document.getElementById("app-version").innerText = "Download Disponível";
+            }
+        });
+    </script>
+</body>
+</html>

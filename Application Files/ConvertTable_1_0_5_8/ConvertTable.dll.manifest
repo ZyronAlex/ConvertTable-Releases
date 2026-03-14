@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ConvertTable.exe" version="1.0.5.8" publicKeyToken="5fb0fa870e945763" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="favicon.ico" asmv2:publisher="Belosoftwares" co.v1:suiteName="Belosoftwares" asmv2:product="Conversor Mercos" asmv2:supportUrl="https://belosoftwares.com.br/" xmlns="urn:schemas-microsoft-com:asm.v1">Sistema de Conversão da tabelas para o Mercos</description>
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Launcher.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="17376">
+      <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uVkeuOtr3Z1hep2TOO9uXokyClxzAqc9/W+fs0bhjt0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ConvertTable.exe" size="12694384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q//qIC+Y5F82obY6Jb1ZpmNXMfEUTL3mLL5m7sbXCkw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="favicon.ico" size="472268">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ce2HzFnEEBbOlVVI95hNHF+ZhQKdJFi/TZschgWJVsY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="index.html" size="5039">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>n3+eXgoz8hQapTjHPwmiYr3Kxoz2T2zIoYeZpcg5xTc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Produtos.json" size="343582">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3w8/gMl9YuDuVfuzjr+EMAJSpS8h16pr/pMz9Y1qUNA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-N3R7KM4\alexf" issuerKeyHash="6cd4aa19a5ced5faa0a750663c679c0c19278812" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/VMiLZl1r9FxH7LWJbd/pIYt5udgOIDCIOHTvJCbZhU=</DigestValue></Reference></SignedInfo><SignatureValue>xwPhfLkgalw4wwuglamTHhkn0kmJd/BVq/YYimBuly4Bgp7qXWP0jT47F+oYFxkdyRNDBEkUOWYOCanNeG6n2JSpwcUl5zEXhYEGtHizGM4yrG87PvizjiRPWRrc4sL0+o4OrmTMAUbjaN/7QYpq4kFxn8wQZKe0cMCY9xmDYxM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ymSBkSDEUBlCtpxV2oBWI0kVCeNlHoZ+yqp4U1RjGAGbR/Fio4wuzFoaHGC6SeIfUeawQQ5F2hjLkLkEcmgTrhrLPU8eTT+62v/m6ynFugri74oo/dZKbCIUGoWKaz+sW6SkZPRF+CKBUwqK7dl3XKRmq+KAoyxvdkQA/NW3ES0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="15669b90bcd3e120c2803860e7e62d86a47fb725d6b21f71d1af75992d2253fd" Description="" Url=""><as:assemblyIdentity name="ConvertTable.exe" version="1.0.5.8" publicKeyToken="5fb0fa870e945763" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-N3R7KM4\alexf</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>8mUuhTgTgQvvUqhpCIDaeSpfDmawBvWtOr6B8/F76l0=</DigestValue></Reference></SignedInfo><SignatureValue>jL2HLC4z5egfonIGpJzOm0nuDGuP3q2I8tByQhBgyXvONXf25ua/Ms8TuhyEoPsSXV3iziDaL7h8XXEjzC562k0vDoQ81OtbMTsd4kfbwBx1MW4Uif//QDdcA+lIFvoJ8Bj4jkTJtQpGz5s24uy76nAYLzCLXQPYIXaqlhmMGpE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ymSBkSDEUBlCtpxV2oBWI0kVCeNlHoZ+yqp4U1RjGAGbR/Fio4wuzFoaHGC6SeIfUeawQQ5F2hjLkLkEcmgTrhrLPU8eTT+62v/m6ynFugri74oo/dZKbCIUGoWKaz+sW6SkZPRF+CKBUwqK7dl3XKRmq+KAoyxvdkQA/NW3ES0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQH7lx8E09BapPgyNueVe+4TANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE4AMwBSADcASwBNADQAXABhAGwAZQB4AGYwHhcNMjYwMzA0MTExNjM4WhcNMjcwMzA0MTcxNjM4WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE4AMwBSADcASwBNADQAXABhAGwAZQB4AGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMpkgZEgxFAZQracVdqAViNJFQnjZR6GfsqqeFNUYxgBm0fxYqOMLsxaGhxgukniH1HmsEEORdoYy5C5BHJoE64ayz1PHk0/utr/5uspxboK4u+KKP3WSmwiFBqFims/rFukpGT0RfgigVMKiu3Zd1ykZqvigKMsb3ZEAPzVtxEtAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAfIdqfMbI7qm6mrvdlHqIv9meTl6OEsKt6KklGXMwb42oTBQzFdz0PqJCTpFiqXoXhCCO88i3Sqxg1w9hF/NQ7jg1XDXsHYRRAe/jrVispyAXmvR4JewNaGTX38yhHcslD/SilbJwmWhgeSruYcOc6vN7cvtxVi6OVSlNsBUlnqI=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
